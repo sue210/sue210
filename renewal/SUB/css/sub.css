@@ -1,0 +1,118 @@
+@charset "utf-8";
+@font-face {
+	font-family: 'Pretendard-Regular', 'Times New Roman';
+	src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+li { list-style-type: none; }
+a { text-decoration: none; color: inherit; }
+body { font-family: 'Pretendard-Regular'; }
+
+.inner { max-width: 1200px; margin:0 auto; }
+
+
+img { width: 100%; }
+
+header { width: 1200px; background-color: #ffffff;  margin: 0 auto; position: relative;}
+header:after {content: ''; display: block; clear: both;}
+header .util ul { color:#b9b9b9; font-size: 16px; padding: 10px; width: 50px; position: absolute; top: 0; left: 0; }
+header .util ul a { width: 50px;}
+/* header .util::after { content:''; display:block; clear:both; }
+header .util li:first-child { float: left;}
+header .util li:nth-child(2) { float: left;}
+header .util li:nth-child(3) { float: left;} */
+
+header .util ul:first-child {position: absolute; top: 0; left: 170px;}
+header .util ul:nth-child(2) {position: absolute; top: 0; left: 1000px;}
+header .util ul:nth-child(3) {position: absolute; top: 0; left: 220px;}
+header .util ul:nth-child(4) {position: absolute; top: 0; left: 950px;}
+header .util ul:hover {color: aqua;} 
+
+
+
+header nav { width: 900px; padding-top: 0; }
+header nav .gnb { width: 600px; float: right; }
+header nav .gnb > li {
+  width: 150px; height: 40px; text-align: center; line-height: 40px;
+  float: left; position: relative; 
+}
+header nav .gnb > li > ul {
+  display: none; position: absolute; top: 40px; left: 0;
+  width: 100%; z-index: 5; 
+  background: rgba(255,255,255,.3);
+}
+/* header nav .gnb:hover > li > ul {
+  display: block;
+} */
+header nav .gnb li a { display: block; width: 150px; height: 40px; line-height: 40px;}
+header nav .gnb > li a {
+  display: block; transition: .5s;
+}
+header nav .gnb > li:hover > a {
+   color: aqua;
+}
+header nav .gnb > li > ul > li:hover > a {
+  background-color: #adadad; color: aqua;
+}
+
+
+
+
+
+header .inner { height: 700px;}
+header h1 { font-size: 20px; text-align: center; padding: 130px 0 10px;}
+header ul {width: 900px; margin: 0 auto;}
+header ul li img {padding: 20px; width: 300px; height: 300px;}
+header ul::after { content:''; display:block; clear:both;}
+header ul li:first-child {float: left;}
+header ul li:nth-child(2) {float: left;}
+header ul li:nth-child(3) {float: left;}
+header .text { width: 900px; margin:0 auto; }
+header .text::after { content:''; display:block; clear:both;  }
+header .text p {font-size: 14px; padding: 10px 50px; text-align: center; width: 300px;}    
+header .text p:first-child {float: left;}
+header .text p:nth-child(2) {float: left;}
+header .text p:nth-child(3) {float: left;}
+
+
+
+figure { width: 900px; margin:0 auto;}
+figure .inner { height: 600px;}
+figure h2 {font-size: 20px; text-align: center; padding: 10px;}
+figure ul li { padding: 20px; width: 300px; height: 300px; }
+figure ul li:first-child { float: left;}
+figure ul li:nth-child(2) { float: left;}
+figure ul li:nth-child(3) { float: left;}
+figure .text1 p { font-size: 14px; padding: 10px 50px; text-align: center; width: 300px; }
+figure .text1 p:first-child { float: left;}
+figure .text1 p:nth-child(2) { float: left;}
+figure .text1 p:nth-child(3) { float: left;}
+
+
+article { width: 900px;  margin:0 auto;}
+article .inner { height: 600px; }
+article h2 { font-size: 20px; text-align: center; padding: 10px;}
+article ul li { padding: 20px; width: 300px; height: 300px;}
+article ul li:first-child { float: left;}
+article ul li:nth-child(2) { float: left;}
+article ul li:nth-child(3) { float: left;}
+article .text2 p {font-size: 14px; padding:10px 50px; text-align: center; width: 300px; }
+article .text2 p:first-child { float: left;}
+article .text2 p:nth-child(2) { float: left;}
+article .text2 p:nth-child(3) { float: left;}
+
+
+footer { height: 300px;background-color: #000000; color: #fff; font-size: 12px; position: relative; }
+footer .foot_cont {position: absolute; top: 0;  width: 100%; height: 250px; border-bottom: 1px solid#fff;}
+footer .foot_cont ul {position: absolute; top: 0; left: 100px;}
+footer .foot_cont ul li {padding: 10px;}
+footer .foot_cont address { width:200px; position: absolute; bottom: 0; left: 50%; padding: 5px;}
+footer .icon {position: absolute; bottom: 0; right: 50px; }
+footer .icon p {font-size: 16px; color: #ffffff; float: left; padding: 10px; }
+footer select {  text-align: center; padding: 10px; position: absolute; top: 30px; right: 50px;}
+footer select option {padding: 5px;}
+footer span {position: absolute; bottom: 5px; left: 100px;}
+footer a:hover { text-decoration: underline; color: aqua;}

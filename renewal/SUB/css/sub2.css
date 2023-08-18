@@ -1,0 +1,85 @@
+@charset "utf-8";
+@import url(./fontStyle.css);
+
+@font-face {
+  font-family: 'Pretendard-Regular', 'Times New Roman';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+* { margin: 0; padding: 0; }
+a { text-decoration: none; color: inherit; }
+li { list-style-type: none;}
+ol, ul { list-style-type: none; }
+img { display: block; }
+body {
+  font-family: 'Pretendard-Regular', 'Times New Roman';;
+  background-color: #fff; color: #333;
+}
+
+#wrap { width: 100%; height: 5000px;}
+header { 
+  width: 1200px; background-color: #ffffff; 
+  margin: 0 auto; 
+}
+header:after {
+  content: ''; display: block; clear: both;
+}
+
+header h1 { 
+  text-align: center; padding: 32px; 
+}
+header .util li {
+  position: relative;
+}
+header .util li a { 
+  color: #b9b9b9; font-size: 20px; padding: 10px;
+}
+header .util li:hover a {
+  color: aqua;
+}
+header .util li:first-child { 
+  position: absolute; top: 20px; left: 450PX;
+}
+header .util li:nth-child(2) { 
+  position: absolute; top: 20px; left: 500px;
+}
+header .util li:nth-child(3) { 
+  position: absolute; top: 20px; left: 550px;
+}
+header .util li:nth-child(4) { 
+  position: absolute; top: 20px; right: 550px;
+}
+header .util li:nth-child(5) { 
+  position: absolute; top: 20px; right: 500px;
+}
+header .util li:nth-child(6) { 
+  position: absolute; top: 20px; right: 450px;
+}
+
+
+header nav { width: 900px; padding-top: 60px; }
+header nav .gnb { width: 600px; float: right; }
+header nav .gnb > li {
+  width: 150px; height: 40px; text-align: center; line-height: 40px;
+  float: left; position: relative;
+}
+header nav .gnb > li > ul {
+  display: none; position: absolute; top: 40px; left: 0;
+  width: 100%; z-index: 5; 
+  background: rgba(255,255,255,.3);
+}
+/* header nav .gnb:hover > li > ul {
+  display: block;
+} */
+header nav .gnb > li a {
+  display: block; transition: .5s;
+}
+header nav .gnb > li:hover > a {
+  background-color: #ccc;
+}
+header nav .gnb > li > ul > li:hover > a {
+  background-color: #ffffff; 
+}
+

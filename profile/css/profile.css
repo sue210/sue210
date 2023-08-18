@@ -1,0 +1,35 @@
+@charset "utf-8";
+@import url(./fontStyle.css);
+
+@font-face {
+  font-family: 'Pretendard-Regular', 'Times New Roman';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* reset  */
+* { margin: 0; padding: 0;}
+li { list-style: none;}
+a { text-decoration: none; color: inherit;}
+img { display: block;}
+body { font-family: 'SUITE-Regular';}
+
+.wrap .gnb { position: fixed; top: 0; left: 35%; }
+.wrap .gnb li { float: left; padding: 30px;}
+.wrap .gnb li a { font-size: 16px; color: #000000; font-weight: 700;}
+.wrap .gnb li:hover a { font-size: 16px; color: #ffffff; }
+  
+
+header { width: 100%; height: 800px; background-color: #ffdaad;}
+header img {border: 1px solid #333; width: 200px; height: 300px; border-radius: 50%; position: fixed; left: 15%; top: 20%;}
+header p { position: fixed; top: 65%; left: 18%; text-align: center;}
+
+
+
+.wrap ul { font-size: 20px; float: left; position: fixed; top: 30%; left: 40%;}
+.wrap ul li {padding: 10px; width: 100px; height: 100px; } 
+.wrap .inner .box1 {padding: 10px; position:fixed; top: 20%; left: 40%;}
+.wrap .inner .box2 {padding: 10px; position:fixed; top: 30%; left: 40%;}
+.wrap .inner .box3 {padding: 10px; position:fixed; top: 42%; left: 40%;}
+.wrap .inner .box4 {padding: 10px; position:fixed; top: 55%; left: 40%;}

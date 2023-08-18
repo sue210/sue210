@@ -1,0 +1,131 @@
+@charset "utf-8";
+@import url(./fontStyle.css);
+
+@font-face {
+  font-family: 'Pretendard-Regular', 'Times New Roman';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+* { margin: 0; padding: 0; }
+a { text-decoration: none; color: inherit; }
+li { list-style-type: none;}
+ol, ul { list-style-type: none; }
+img { display: block; }
+body {
+  font-family: 'Pretendard-Regular', 'Times New Roman';
+  background-color: #fff; color: #333;
+}
+
+#wrap { width: 100%; height: 4000px;}
+header { width: 1200px; background-color: #ffffff; margin: 0 auto; position: relative;}
+header:after {content: ''; display: block; clear: both;}
+header img { width: 100%; }
+header .util { line-height: 50px;}
+header .util li {} 
+header .util li a {color: #ffffff; font-size: 16px; padding: 20px;}
+header .util li:hover a {color: aqua;}
+header .util .util2 { text-align: right;}
+ header .util li:first-child { 
+  position: absolute; top: 0; left: 0;
+}
+header .util li:nth-child(2) { 
+  position: absolute; top: 0; left: 50px;
+}
+header .util li:nth-child(3) { 
+  position: absolute; top: 0; left: 100px;
+}
+header .util li:nth-child(4) { 
+  position: absolute; top: 0; right: 100px;
+}
+header .util li:nth-child(5) { 
+  position: absolute; top: 0; right: 50px;
+}
+header .util li:nth-child(6) { 
+  position: absolute; top: 0; right: 0;
+} 
+header .util {width: 100%; height: 100px; background: url(../img/그룹\ 22.png) center/cover; }
+/* header .util::after { content:''; display:block; clear:both; }
+header .util li:first-child { float: left;}
+header .util li:nth-child(2) { float: left;}
+header .util li:nth-child(3) { float: left;}
+header .util .util2 li:nth-child(4) { float: right;}
+header .util .util2 li:nth-child(5) { float: right;}
+header .util .util2 li:nth-child(6) { float: right;} */
+
+header nav { width: 900px; padding-top: 0; }
+header nav .gnb { width: 600px; float: right; }
+header nav .gnb > li {width: 150px; height: 40px; text-align: center; line-height: 40px;
+  float: left; position: relative;}
+header nav .gnb > li > ul {display: none; position: absolute; top: 40px; left: 0;
+  width: 100%; z-index: 5; background: rgba(255,255,255,.3);}
+/* header nav .gnb:hover > li > ul {
+  display: block;
+} */
+header nav .gnb > li a {display: block; transition: .5s;}
+header nav .gnb > li:hover > a {background-color: #ccc;}
+header nav .gnb > li > ul > li:hover > a {background-color: aqua; }
+
+
+figure {position: relative;}
+figure h4 {font-size: 24px; color: #ececec; position: absolute; top: 70%; left: 30%; 
+  border-radius: 2px; border: 1px solid #fff;padding: 10px 40px;}
+figure h4:hover > a {color: aquamarine;}
+figure ul li img {margin:0 auto; width: 1200px; }
+figure ul li:nth-child(2) {display: none;}
+
+
+#container {width: 1200px; margin: 0 auto;}
+
+
+article {width: 1200px; height: 1000px; position: relative;}
+article h2 {text-align: center; padding: 100px; font-size: 28px;}
+article ul {float: left;}
+article ul li {float: left; position: relative;}
+article ul li img {width: 300px; height: 300px;  padding: 50px 50px; }
+article ul li:hover img {opacity: .5; display: block;}
+article ul a {display: none;position: absolute; top: 360px; left: 140px; 
+  border-radius: 5px; border: 1px solid rgb(51, 51, 51); padding: 5px 20px;}
+article ul li:hover a {display: block; position: absolute; top: 340px; left: 140px; 
+  border-radius: 5px; border: 1px solid rgb(51, 51, 51); padding: 5px 20px;}
+article ul li span { text-align:center; font-size: 16px; display: block;}
+
+
+section { display: flex; padding-bottom: 50px;}
+section video {height: 500px;}
+section h4 {font-size: 28px;}
+
+
+.box h2 {padding: 100px; text-align: center; font-size: 28px;}
+.box ul {float: left;  position: relative;}
+.box ul li {float: left; }
+.box ul li:hover {opacity: .5; display: block;}
+.box ul li:hover a { opacity: .5; display: block;}
+.box ul li img {width: 300px;}
+.box ul li a {display: none;border: 1px solid #333; padding: 7px 10px; border-radius: 7px; position: absolute; top: 350px; left: 100px;}
+.box ul li span {text-align: center;  display: block; font-size: 16px; position: absolute; top: 400px; left: 30px; padding: 20px 0;}
+.box ul li:nth-child(2) span {position: absolute; top: 400px; left: 350px; }
+.box ul li:nth-child(3) span {position: absolute; top: 400px; left: 670px;}
+.box ul li:nth-child(4) span {position: absolute; top: 400px; left: 960px;}
+.box ul li img {float: left;}
+.box2 { height: 1000px; float: left; padding: 100px 10px; position: relative;}
+.box2 ul {float: left;}
+.box2 ul li {float: left;}
+.box2 ul li:hover img {opacity: .5;}
+.box2 ul li a { display: none;}
+.box2 ul li:hover a { display: block; border: 2px solid #0e0d0d;
+  padding: 10px 30px; position: absolute; top: 280px; left: 220px; font-size: 30px;}
+
+
+footer { height: 300px;background-color: #000000; color: #fff; font-size: 12px; position: relative; }
+footer .foot_cont {position: absolute; top: 0;  width: 100%; height: 250px; border-bottom: 1px solid#fff;}
+footer .foot_cont ul {position: absolute; top: 0; left: 100px;}
+footer .foot_cont ul li {padding: 10px;}
+footer .foot_cont address { width:200px; position: absolute; bottom: 0; left: 50%; padding: 5px;}
+footer .icon {position: absolute; bottom: 0; right: 50px; }
+footer .icon p {font-size: 16px; color: #ffffff; float: left; padding: 10px; }
+footer select {  text-align: center; padding: 10px; position: absolute; top: 30px; right: 50px;}
+footer select option {padding: 5px;}
+footer span {position: absolute; bottom: 5px; left: 100px;}
+footer a:hover { text-decoration: underline; color: aqua;}
